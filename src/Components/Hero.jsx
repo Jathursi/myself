@@ -19,7 +19,7 @@ function Hero() {
         <div className='flex flex-wrap lg:flex-row-reverse'>
             <div className='w-full lg:w-1/2'>
                 <div className='flex justify-center lg:p-8'>
-                    <motion.img src={profilrPic} width={650} height={650} alt='Jathursika' className='border border-stone-900 rounded-full' initial={{x:100, opacity:0}} animate={{x:0, opacity:1}} transition={{duration:1, delay:1.5}}/>
+                    <motion.img src={profilrPic} width={650} height={650} alt='Jathursika' className='shadow-sm shadow-gray-200 rounded-full' initial={{x:100, opacity:0}} animate={{x:0, opacity:1}} transition={{duration:1, delay:1.5}}/>
                 </div>
             </div>
             <div className='full lg:w-1/2'>
