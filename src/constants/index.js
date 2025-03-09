@@ -2,11 +2,15 @@
 // import project2 from "../assets/projects/project-2.webp";
 // import project3 from "../assets/projects/project-3.webp";
 import video from "../assets/projects/video.mp4";
+import project6 from "../assets/projects/project6.webp";
+import project7 from "../assets/projects/project7.webp";
 // import project4 from "../assets/projects/project-4.webp";
 import project from "../assets/projects/project.webp";
 import project1 from "../assets/projects/project1.webp";
 import project2 from "../assets/projects/project2.webp";
+import picture from "../assets/projects/picture5.webp";
 import project3 from "../assets/projects/project3.webp";
+import project4 from '../assets/projects/project4.webp';
 export const HERO_CONTENT = `I am a Computer Science student passionate about AI, Machine Learning, and full-stack development. I enjoy building practical solutions and learning new technologies. I look forward to applying my skills to real-world problems and continuously improving.`;
 
 export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly web applications. With 5 years of professional experience, I have worked with a variety of technologies, including React, Next.js, Node.js, MySQL, PostgreSQL, and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`;
@@ -19,33 +23,12 @@ export const EXPERIENCES = [
     description: `Managing and maintaining IT infrastructure, ensuring smooth system operations. Also Providing technical support and troubleshooting system-related issues.`,
     technologies: [ "React.js", "Node.js", "MySQL"],
   },
-  // {
-  //   year: "2022 - 2023",
-  //   role: "Frontend Developer",
-  //   company: "Adobe",
-  //   description: `Designed and developed user interfaces for web applications using Next.js and React. Worked closely with backend developers to integrate frontend components with Node.js APIs. Implemented responsive designs and optimized frontend performance.`,
-  //   technologies: ["HTML", "CSS", "Vue.js", "mySQL"],
-  // },
-  // {
-  //   year: "2021 - 2022",
-  //   role: "Full Stack Developer",
-  //   company: "Facebook",
-  //   description: `Developed and maintained web applications using JavaScript, React.js, and Node.js. Designed and implemented RESTful APIs for data communication. Collaborated with cross-functional teams to deliver high-quality software products on schedule.`,
-  //   technologies: ["Python", "Svelte", "Three.js", "Postgres"],
-  // },
-  // {
-  //   year: "2020 - 2021",
-  //   role: "Software Engineer",
-  //   company: "Paypal",
-  //   description: `Contributed to the development of web applications using JavaScript, React.js, and Node.js. Managed databases and implemented data storage solutions using MongoDB. Worked closely with product managers to prioritize features and enhancements.`,
-  //   technologies: ["Ruby", "Rails", "PHP", "Sqlite"],
-  // },
 ];
 
 export const PROJECTS = [
   {
     title: "E-Commerce Website - present",
-    image: project1,
+    image: project7,
     description:
       "I am currently building an E-Commerce website with a responsive chatbot.",
     technologies: ["Python", "Flask", "React.js", "Node.js", "MySQL"],
@@ -53,7 +36,7 @@ export const PROJECTS = [
   },
   {
     title: "IEEE Computer Society Website - 2025",
-    image: project2,
+    image: picture,
     description:
       "I developed the IEEE Computer Society website, designing an interactive and user friendly platform to enhance engagement and accessibility.",
     technologies: ["React.js", "Contentful CMS"],
@@ -71,7 +54,7 @@ export const PROJECTS = [
   },
   {
     title: "Ecommerce Chatbot - 2025",
-    image: project3,
+    image: project4,
     description:
       "I developed an E-commerce chatbot, integrating NLP to provide personalized customer service.",
     technologies: ["React.js", "Node.js", "MySQL", "Python", "Flask"],
@@ -80,7 +63,7 @@ export const PROJECTS = [
   },
   {
     title: "Vehicle Management (E-job Card) Website - 2024",
-    image: project3,
+    image: project6,
     description:
       " led the development of a Vehicle Management (e-job card) project, creating a system to Manage vehicle services, maintenance records, and job cards, improving operational efficiency",
     technologies: ["React.js", "Node.js", "MySQL"],

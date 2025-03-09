@@ -12,15 +12,15 @@ function Navbar() {
             </a>
         </div>
         <div className='m-8  flex items-center justify-center gap-5 text-2xl'>
-            <a href='www.linkedin.com/in/jathursika-velummayilum' target='_blank' rel='noopener noreferrer' aria-label='Linkdin'>
+            <a href='https://www.linkedin.com/in/jathursika-velummayilum/' aria-label='Linkdin'>
                 {/* <i className='fab fa-linkedin-in'></i> */}
                 <IoLogoLinkedin className='text-3xl hover:scale-110 cursor-pointer'/>
             </a>
-            <a href='https://github.com/Jathursi' target='_blank' rel='noopener noreferrer' aria-label='Github'>
+            <a href='https://github.com/Jathursi' aria-label='Github'>
                 {/* <i className='fab fa-github'></i> */}
                 <FaGithub className='text-3xl hover:scale-110 cursor-pointer'/>
             </a>
-            <a href='facebook' target='_blank' rel='noopener noreferrer' aria-label='facebook'>
+            <a href='https://www.facebook.com/shaheer.love.14' target='_blank' rel='noopener noreferrer' aria-label='facebook'>
                 {/* <i className='fab fa-twitter'></i> */}
                 <FaFacebookSquare className='text-3xl hover:scale-110 cursor-pointer'/>
             </a>

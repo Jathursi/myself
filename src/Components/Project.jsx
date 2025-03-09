@@ -2,12 +2,14 @@ import React, { useState } from 'react';
 import { PROJECTS } from '../constants';
 import { motion } from 'framer-motion';
 import { FaPlay, FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
-
+import {Link} from 'react-router-dom';
 function Project() {
+  // const navigate = useNavigate();
   const [selectedVideo, setSelectedVideo] = useState(null);
   
   return (
     <div className="pb-4">
+      {/* <a href="https://github.com/Jathursi" target="_blank">Test GitHub Link</a> */}
       <motion.h2 
         whileInView={{ opacity: 1, y: 0 }} 
         initial={{ opacity: 0, y: -100 }} 
@@ -23,12 +25,12 @@ function Project() {
             whileInView={{ opacity: 1, y: 0 }} 
             initial={{ opacity: 0, y: 50 }} 
             transition={{ duration: 1.5 }} 
-            className="rounded-lg bg-stone-900 p-6 shadow-lg flex flex-col justify-between">
+            className="rounded-lg bg-stone-900 p-6 pointer-events-auto shadow-lg flex flex-col justify-between">
             
             <img 
               src={project.image} 
               alt={project.title} 
-              className="w-full h-48 object-cover rounded-lg mb-4" 
+              className="w-full h-48 object-contain rounded-lg mb-4" 
             />
             
             <h3 className="mb-2 text-2xl font-semibold text-stone-200">
@@ -53,12 +55,18 @@ function Project() {
               )}
               {project.github && (
                 <a 
-                  href={project.github} 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="flex items-center gap-2 bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-700">
-                  <FaGithub /> GitHub
-                </a>
+  href={project.github} 
+  target="_blank" 
+  rel="noopener noreferrer" 
+  className="flex items-center gap-2 bg-gray-600 text-white px-4 py-2 rounded-lg hover:bg-gray-700"
+  onClick={() => console.log("GitHub Link Clicked!")}
+>
+  <FaGithub /> GitHub
+</a>
+
+                  
+
+              
               )}
               {project.webpage && (
                 <a 
@@ -76,10 +84,10 @@ function Project() {
       
       {selectedVideo && (
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-70 z-50">
-          <div className="bg-white p-4 rounded-lg w-[80%] max-w-2xl relative">
+          <div className="bg-white p-4 rounded-lg w-[90%] max-w-5xl relative">
             <button 
               onClick={() => setSelectedVideo(null)}
-              className="absolute top-2 right-2 bg-red-500 text-white px-3 py-1 rounded-full hover:bg-red-700">
+              className="absolute top-2 right-2 bg-red-500 text-white px-3 py-1 rounded-full hover:bg-red-700 z-100">
               ✕
             </button>
             <video controls autoPlay className="w-full rounded-lg">
