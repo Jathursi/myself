@@ -2,6 +2,8 @@
 // import project2 from "../assets/projects/project-2.webp";
 // import project3 from "../assets/projects/project-3.webp";
 import video from "../assets/projects/video.mp4";
+import video2 from "../assets/projects/video2.mp4";
+import video3 from "../assets/projects/video3.mp4";
 import project6 from "../assets/projects/project6.webp";
 import project7 from "../assets/projects/project7.webp";
 // import project4 from "../assets/projects/project-4.webp";
@@ -11,6 +13,8 @@ import project2 from "../assets/projects/project2.webp";
 import picture from "../assets/projects/picture5.webp";
 import project3 from "../assets/projects/project3.webp";
 import project4 from '../assets/projects/project4.webp';
+import project8 from '../assets/projects/project8.webp';
+import project9 from '../assets/projects/project9.webp';
 export const HERO_CONTENT = `I am a Computer Science student passionate about AI, Machine Learning, and full-stack development. I enjoy building practical solutions and learning new technologies. I look forward to applying my skills to real-world problems and continuously improving.`;
 
 export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly web applications. With 5 years of professional experience, I have worked with a variety of technologies, including React, Next.js, Node.js, MySQL, PostgreSQL, and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`;
@@ -27,12 +31,30 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
-    title: "E-Commerce Website - present",
+    title: "AI recipe generator - 2025",
+    image: project9,
+    description:
+      "I developed an AI recipe generator, creating a platform to generate recipes based on user preferences.",
+    technologies: ["Next.js", "Python", "Flask", "Transformer:BERT"],
+    github: 'https://github.com/Jathursi/AI-Based-Recipe-Generator',
+    video: video2,
+  },
+  {
+    title: "Proxy Server - 2025",
+    image: project8,
+    description:
+      "I am currently building an E-Commerce website with a responsive chatbot.",
+    technologies: ["React.js", "Firebase", "Squid", "Linux"],
+    github: "https://github.com/Jathursi/Proxy"
+  },
+  {
+    title: "E-Commerce Website - 2025",
     image: project7,
     description:
       "I am currently building an E-Commerce website with a responsive chatbot.",
     technologies: ["Python", "Flask", "React.js", "Node.js", "MySQL"],
-    github: "https://github.com/Jathursi/Ecommerce"
+    github: "https://github.com/Jathursi/Ecommerce",
+    video: video3,
   },
   {
     title: "IEEE Computer Society Website - 2025",
